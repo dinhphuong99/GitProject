@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 20px;
+    border: 1px solid yellow;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; background-color:yellow; color: black; 
+    } 

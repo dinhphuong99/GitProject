@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Bài 1:
+    </p>
+
+    <p id = "l"></p>
+    <p id = "l1"></p>
+    <script>
+        let DiemVatLy = parseInt(prompt("Nhập điểm Vật Lý: "));
+        let DiemSinhHoc = parseInt(prompt("Nhập điểm Sinh Học: "));
+        let DiemHoaHoc = parseInt(prompt("Nhập điểm Hoá Học: "));
+
+        let TongDiem = DiemHoaHoc + DiemVatLy + DiemSinhHoc;
+        let DiemTrungBinh = TongDiem / 3;
+
+        document.getElementById("l").innerHTML = ("Điểm Tổng: " + TongDiem);
+
+        document.getElementById("l1").innerHTML = ("Điểm trung bình: " + DiemTrungBinh);
+    </script>
+
+    <p>
+        Bài 2:
+    </p>
+
+    <p id="l3"></p>
+    <script>
+        let DoC = parseInt(prompt("Nhập độ C: "));
+        let DoF = (9*DoC/5 +32);
+
+        document.getElementById("l3").innerHTML = ("Độ F là: " + DoF);
+    </script>
+
+    <p>
+        Bài 3:
+    </p>
+
+    <p id="l3"></p>
+    <script>
+        let BanKinh = parseInt(prompt("Nhập bán kính: "));
+        let DienTich = 3.14*BanKinh*BanKinh;
+
+        document.getElementById("l3").innerHTML = ("Diện tích là: " + DienTich);
+    </script>
+
+<p>
+    Bài 4:
+</p>
+
+<p id="l4"></p>
+<script>
+    let BanKinh1 = parseInt(prompt("Nhập bán kính: "));
+    let ChuVi = 3.14*BanKinh1*2;
+
+    document.getElementById("l4").innerHTML = ("Chu vi: " + ChuVi);
+</script>
+</body>
+</html>
