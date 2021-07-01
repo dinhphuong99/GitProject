@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            <input type="text" id = "soNam" name = "soNam">
+        </p>
+
+        <input type="button" value="KienTra" id ="" onclick="KiemTraNamNhuan()">
+        <p id = "ketQua">
+
+        </p>
+    </div>
+</body>
+<script>
+    function KiemTraNamNhuan()
+    {
+        var Nam = parseInt(document.getElementById("soNam").value);
+    if(Nam % 4 == 0 && Nam % 100 != 0)
+        document.getElementById("ketQua").innerHTML = ("Đây là năm nhuận");
+    else if(Nam % 100 == 0 && Nam % 400 == 0)
+        document.getElementById("ketQua").innerHTML = ("Đây là năm nhuận");
+    else 
+        document.getElementById("ketQua").innerHTML = ("Đây không là năm nhuận");
+    }
+</script>
+</html>
