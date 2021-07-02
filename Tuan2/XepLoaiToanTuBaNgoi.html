@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var score = parseInt(prompt("Input score: ", ''));
+    
+    (score > 10 && score <0)?alert("Điểm phải từ 0 đến 10"):(
+        (score < 5)? alert("Yếu") : (
+            (score >=5 && score <7)? alert("Trung bình"):(
+                (score >=7 && score <8)?alert("Khá"):(
+                    (score >=8 && score <9)? alert("Giỏi"):alert("Xuất sắc")
+                )
+            )
+        )
+    )
+</script>
+
+</html>
