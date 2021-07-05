@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var doanhSo = parseInt(prompt('Nhập doanh số (đ)',''));
+
+        var hoaHongNhanDuoc = 0;
+        if(doanhSo <= 1000000 && hoaHongNhanDuoc <= 0){
+            hoaHongNhanDuoc = doanhSo*0.05;
+        }else if(doanhSo <= 2500000){
+            hoaHongNhanDuoc = doanhSo*0.1;
+        }else if(doanhSo >2500000){
+            hoaHongNhanDuoc = doanhSo*0.15;
+        }
+
+        alert(`Hoa hồng nhận được là ${hoaHongNhanDuoc}`);
+    </script>
+</html>
