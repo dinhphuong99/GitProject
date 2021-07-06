@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var soTien = parseInt(prompt("Nhập vào số tiền: "));
+    var soNam = parseInt(prompt("Nhập vào số năm: "));
+
+    if (soTien > 0 && soTien < 20000000)
+        alert("Số tiền nhận được là: " + (soTien *(1 + 0.04) ^ soNam));
+    else if (soTien > 20000000 && soTien < 50000000)
+        alert("Số tiền nhận được là: " + (soTien *(1 + 0.05) ^ soNam));
+    else
+        alert("Số tiền nhận được là: " + (soTien *(1 + 0.06) ^ soNam));
+</script>
+
+</html>

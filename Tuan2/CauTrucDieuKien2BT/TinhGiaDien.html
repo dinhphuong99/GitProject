@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var soDien = parseInt(prompt('Nhập vào số kWh: '));
+
+    if (soDien <= 50 && soDien >= 0)
+        alert("Số tiền phải trả là: " + (soDien * 1678) + "(đ)");
+    else if (soDien <= 100 && soDien > 50)
+        alert("Số tiền phải trả là: " + (soDien * 1734) + "(đ)");
+    else if (soDien <= 200 && soDien > 100)
+        alert("Số tiền phải trả là: " + (soDien * 2014) + "(đ)");
+    else if(soDien >200)
+        alert("Số tiền phải trả là: " + (soDien*2536)+"(đ)");
+    else
+        alert("Số liệu không hợp lệ");
+</script>
+
+</html>
